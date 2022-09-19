@@ -1,6 +1,16 @@
+
+
+
 function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+  const sum = [];
+   for(let i = 0; i< array.length; i++) {
+     for(let j = i+1;  j < array.length; j++) {
+       if(target == array[i] + array[j]) return true
+     }
+   }
+  return false
+ }
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -8,10 +18,18 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  write a function that will take in two arguments an array of intergers and a target interger. 
+  in the array of intergers, there must be a sum of two numbers that will equal the given target integer 
+  if integers have a sum equal to the target interger
+  return true
+
+  otherwise if the intergers don't have 2 sums that equal the target
+  return false
+
 */
 
 /*
-  Add written explanation of your solution here
+  Add written explanation of your solution hereode
 */
 
 // You can run `node index.js` to view these console logs
